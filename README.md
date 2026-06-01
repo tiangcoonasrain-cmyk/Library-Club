@@ -1,1 +1,354 @@
 # Library-Club
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Club</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#f6f1e9;
+      color:#2d2d2d;
+      line-height:1.6;
+    }
+
+    header{
+      background:#2d3b2f;
+      color:white;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      font-family:'Playfair Display', serif;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:15px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#d8c3a5;
+    }
+
+    .hero{
+      height:90vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h1{
+      font-size:60px;
+      margin-bottom:15px;
+      font-family:'Playfair Display', serif;
+    }
+
+    .hero-content p{
+      font-size:18px;
+      max-width:700px;
+      margin:auto;
+    }
+
+    .hero-btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:14px 30px;
+      background:#d8c3a5;
+      color:#2d2d2d;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .hero-btn:hover{
+      background:white;
+    }
+
+    section{
+      padding:80px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      font-size:40px;
+      color:#2d3b2f;
+      font-family:'Playfair Display', serif;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:15px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      color:#2d3b2f;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:12px;
+    }
+
+    .contact{
+      text-align:center;
+      background:#2d3b2f;
+      color:white;
+      border-radius:20px;
+      padding:50px 20px;
+    }
+
+    .contact p{
+      margin-top:10px;
+    }
+
+    footer{
+      background:#1e2720;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+    @media(max-width:900px){
+
+      .hero-content h1{
+        font-size:42px;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Library Club</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#books">Books</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to the Library Club</h1>
+
+      <p>
+        A community for readers, writers, and students who love books,
+        creativity, learning, and imagination.
+      </p>
+
+      <a href="#about" class="hero-btn">Explore More</a>
+    </div>
+  </section>
+
+  <section id="about">
+
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+
+    <div class="about">
+
+      <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1200&auto=format&fit=crop">
+
+      <div>
+        <h3>Our Mission</h3>
+
+        <p>
+          The Library Club promotes reading culture, creativity,
+          leadership, and collaboration among students.
+        </p>
+
+        <br>
+
+        <h3>Our Vision</h3>
+
+        <p>
+          To create a school community where students value knowledge,
+          literature, and lifelong learning.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="books">
+
+    <div class="section-title">
+      <h2>Featured Books</h2>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Romeo and Juliet</h3>
+        <p>By William Shakespeare</p>
+      </div>
+
+      <div class="card">
+        <h3>The Little Prince</h3>
+        <p>By Antoine de Saint Exupéry</p>
+      </div>
+
+      <div class="card">
+        <h3>Pride and Prejudice</h3>
+        <p>By Jane Austen</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="events">
+
+    <div class="section-title">
+      <h2>Upcoming Events</h2>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Book Fair</h3>
+        <p>June 15, 2026</p>
+      </div>
+
+      <div class="card">
+        <h3>Poetry Writing Contest</h3>
+        <p>June 28, 2026</p>
+      </div>
+
+      <div class="card">
+        <h3>Reading Challenge</h3>
+        <p>July 10, 2026</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="gallery">
+
+    <div class="section-title">
+      <h2>Gallery</h2>
+    </div>
+
+    <div class="gallery">
+
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop">
+
+      <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200&auto=format&fit=crop">
+
+      <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=1200&auto=format&fit=crop">
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="contact">
+
+      <h2>Contact Us</h2>
+
+      <p>Email: libraryclub@email.com</p>
+
+      <p>Facebook: Library Club Official</p>
+
+      <p>School Library Building</p>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Library Club. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
